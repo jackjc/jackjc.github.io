@@ -29,3 +29,15 @@ Cmd --> Command
 | 插件              | C-S-x   |          |
 | Markdown 侧边预览 | C-k v   |          |
 | Markdown 预览     | C-S-v   |          |
+
+## vim
+### 输入法自动切换的问题
+1. 安装 [im-select: Switch your input method from terminal](https://github.com/daipeihust/im-select)
+2. 配置
+```
+    "vim.autoSwitchInputMethod.obtainIMCmd": "c:\\\\Windows\\\\System32\\\\im-select.exe",
+    "vim.autoSwitchInputMethod.switchIMCmd": "c:\\\\Windows\\\\System32\\\\im-select.exe {im}",
+    "vim.autoSwitchInputMethod.defaultIM": "1",
+    "vim.autoSwitchInputMethod.enable": true
+```
+
